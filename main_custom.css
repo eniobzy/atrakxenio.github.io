@@ -1,0 +1,2138 @@
+@font-face {
+  font-family: gamefont;
+  src: url(https://raw.githubusercontent.com/XEDYYY/font/main/BF_Modernista-Regular.ttf)
+}
+
+
+:root {
+  --background:rgb(35 35 35 / 60%);
+  --background-end: rgba(34,35,50, .0);
+  --accent:rgb(254 231 203);
+  --ammo:rgba(127, 255, 159, 0.8);
+  --health: rgb(127, 255, 159);
+  --text:rgb(254 231 203);
+  --chat: rgb(26 26 26 / 40%);
+}
+
+* {
+  text-shadow: unset !important;
+  box-shadow: unset !important;
+  animation: unset !important;
+}
+
+.button, .button:hover { 
+  border: unset !important;
+}
+
+#newsHolder,#tlInfHold,#mainLogo,#youNewDiv,#seasonLabel,#streamContainer,#tlInfHold,#aHolder,#aContainer,#endAContainer,#aMerger,#onetrust-consent-sdk,#voiceDisplay,#mapInfo {
+  display:none!important;
+}
+
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3) }
+  100% { transform: scale(1) }
+}
+
+#newsHolder, #gameNameHolder, #mainLogo, #seasonLabel, #onetrust-consent-sdk, #mapInfo, #friendCon {
+    display: none !important;
+}
+
+.buttonO, .button {
+    border: unset !important;
+}
+
+.buttonO:hover, .button:hover {
+    border: unset !important;
+}
+
+#uiBase.onMenu {
+  backdrop-filter: grayscale(100%);
+}
+
+#uiBase.onMenu #chatHolder {
+  right:140px;
+  left:unset!important;
+  background-color:transparent!important;
+  bottom:45px!important;
+}
+
+#uiBase.onMenu #chatList {
+  background-color: transparent;
+  text-align: right;
+  transform: rotate(2deg);
+  margin-bottom: 20px;
+}
+
+#uiBase.onMenu #chatHolder {
+  right: calc(50% - 610px);
+  bottom: 120px !important;
+  transform: rotate(-.6deg);
+}
+
+#uiBase.onMenu #chatInputHolder::before {
+  content:"";
+  width:605px;
+  height:77px;
+  background-image:url(https://media.discordapp.net/attachments/610498484529004575/1058054036051460156/Untitled-2_copy.png);
+  position:fixed;
+  z-index:-1;
+  background-size:605px 70px;
+  background-repeat:no-repeat;
+  transform:rotate(-2.8deg) rotateY(180deg);
+  right:-11px;
+  top:-20px;
+}
+
+#uiBase.onMenu #chatInputHolder::after {
+  content:"";
+  width:605px;
+  height:77px;
+  background-image:url(https://media.discordapp.net/attachments/610498484529004575/1058054036051460156/Untitled-2_copy.png);
+  position:fixed;
+  z-index:-1;
+  background-size:605px 70px;
+  background-repeat:no-repeat;
+  transform: rotate(-1.6deg);
+  right: 620px;
+  top: 7px;
+}
+
+#uiBase.onMenu #chatInputHolder {
+  border:none;
+  border-radius:0;
+  height:25px;
+  padding:unset;
+  padding-left:25px;
+  transform:translateX(-5px) rotate(2.8deg);
+}
+
+#uiBase.onMenu #chatInput {
+  visibility: visible !important;
+  border:none;
+  text-align:right;
+  height:25px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  padding:0;
+  line-height: 25px;
+  font-size:20px !important;
+  color: var(--accent);
+  background-color: transparent;
+    border-radius: unset !important;
+  transform: translate(10px, -2px);
+}
+
+#uiBase.onMenu #chatInput::placeholder {
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+#uiBase.onMenu .chatItem {
+  background-color:transparent!important;
+  background:transparent;
+  padding:10px;
+  margin:2px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:1;
+}
+
+#clientExit {
+  display: flex !important; 
+}
+
+#menuItemContainer {
+  flex-direction: row;
+  height: 200px;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 1200px;
+  background-image: url(https://media.discordapp.net/attachments/610498484529004575/1058054275189719112/circle-png-44650.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  padding: 0px !important;
+  background-color: transparent;
+}
+
+#menuItemContainer > div:nth-child(1) {
+  width: 230px;
+}
+
+#menuItemContainer > div:nth-child(2) {
+  width: 200px;
+}
+
+#menuItemContainer > div:nth-child(3) {
+  width: 310px;
+}
+
+#menuItemContainer > div:nth-child(4) {
+  width: 220px;
+}
+
+#menuItemContainer > div:nth-child(5) {
+  width: 200px;
+}
+
+#menuItemContainer > div > span {
+  display: none;
+}
+
+.menuItem {
+  height: 80px;
+  width: 200px;
+  background-color: transparent;
+}
+
+.menuItem:hover {
+  border: unset;
+}
+
+.menuItemIcon {
+  display: none;
+}
+
+.menuItemTitle {
+  display: none;
+}
+
+#instructions {
+  display: none;
+}
+
+.imageButton {
+  display: none !important;
+}
+
+#editorBtnM {
+  display: none !important;    
+}
+
+.verticalSeparator {
+  display: none;
+}
+
+.headerBar {
+  background-color: transparent;
+}
+
+#signedOutHeaderBar {
+  width: 100%;
+  height: 100%;
+  flex-direction: unset;
+  align-items: flex-end;
+  pointer-events: none;
+  cursor: unset;
+}
+
+#signedOutHeaderBar > div {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  top: unset;
+  bottom: 30px;
+  left: calc(50% - 620px);
+  transform: rotate(-2.2deg);
+  height: 50px;
+  padding-right: 20px;
+  text-align: left;
+  padding-left: 20px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  width: 40px !important;
+    line-height: 50px;
+    font-size: 0px !important;
+  padding-bottom: unset !important;
+}
+
+  #signedOutHeaderBar > div > span {
+  color: var(--accent) !important;
+  font-size: 40px !important;   
+}
+
+#signedInHeaderBar {
+  left: calc(50% - 600px);
+  bottom: 40px;
+  top: unset;
+  transform: translateY(-50%);
+  transform: rotate(-2deg);
+  height: 60px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+.progressBar {
+  display: none !important;
+}
+
+#mLevelCont {
+  display: none;
+}
+
+#menuUsernameContainer {
+  display: none;
+}
+
+.krSocial {
+  display: none;
+}
+
+.menuSocialB {
+    display: none;
+}
+
+#menuJNKCount {
+  display: none;
+  color: var(--accent) !important;
+  font-size: 24px;
+}
+
+#menuJNKCount > span{
+  color: var(--accent) !important;
+  font-size: 24px;
+}
+#spectButton > span {
+  display: none;
+}
+
+#subLogoButtons {
+  background-image: url(https://media.discordapp.net/attachments/610498484529004575/1058054543075721256/circle-png-44650.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1300px;
+  height: 80px;
+  padding: unset;
+  display: flex;
+  align-items: center;
+  bottom: 30px;
+}
+
+#subLogoButtons > div {
+  font-size: 0px !important;
+  box-shadow: none !important;
+  width: 100px;
+  height: 70px;
+  background-color: transparent !important;
+  transform: translateX(340px);
+  border: unset !important;
+}
+
+#menuBtnHost {
+  width: 90px !important;
+}
+
+#menuBtnBrowser {
+  width: 90px !important;    
+}
+
+#menuBtnRanked {
+  width: 60px !important;
+}
+
+#menuBtnJoin {
+  width: 60px !important;
+}
+
+#inviteButton {
+  width: 60px !important;
+    margin-left: 110px;
+    background: transparent !important;
+}
+
+#faceItIconM {
+  display: none;
+}
+
+#mailContainer {
+  margin-left: 20px;
+  transform: translateY(4px);
+}
+
+#mailCount {
+  color: var(--accent);
+}
+.krInfo {
+}
+
+#menuKRCount {
+  font-size: 24px;
+  color: var(--accent) !important;
+}
+
+#menuKRCount > span {
+  color: var(--accent) !important;   
+}
+
+#mailIcon {
+  color: var(--accent) !important;     
+  font-size: 40px !important;   
+}
+
+#customizeButton {
+  text-shadow: none !important;
+  box-shadow: none !important;
+  visibility: visible;
+  color: var(--accent);
+  bottom: -70px;
+  position: fixed;
+  right: -95px;
+  text-align: left;
+  border-radius: 0px;
+  text-transform: uppercase;
+  background-color: transparent !important;
+  padding: 0px;
+  height: 50px;
+    width: 60px;
+    font-size: 0px !important;
+  line-height: 50px;
+  transform: rotate(1.8deg);
+  border: unset !important;
+}
+
+#customizeButton::before {
+    content: "auto_fix_high";
+    text-transform: none !important;
+    font-family: "Material Icons" !important;
+    font-size: 45px;
+}
+
+#menuClassContainer:hover > #classPreviewCanvas {
+  opacity: .4;
+}
+
+#classPreviewCanvas {
+  visibility: visible;
+  opacity: 0;
+  bottom: 110px;
+  position: fixed;
+  transition: opacity .20s ease-in-out;
+}
+
+#bubbleContainer {
+  display: none;
+}
+
+#menuClassContainer {
+  right: unset;
+  left: calc(50% - 500px);
+  width: 1000px;
+  bottom: 0px;
+  top: unset;
+  height: 1000px;
+  visibility: hidden;
+}
+
+#policeButton {
+  bottom: 0px !important;
+  position: fixed;
+  visibility: visible;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  left: 0px;
+  transform: translate(1260px, 105px) rotate(2.2deg);
+  border: unset !important;
+}
+
+#policeButton:before {
+  content: "accessible_forward";
+  font-family: "Material Icons";
+  font-size: 45px;
+  color: var(--accent);
+}
+
+#policeButton > img {
+  display: none;
+}
+
+#menuClassSubtext {
+  display: none;
+}
+
+#menuClassName {
+  display: none;
+}
+
+#customizeButton > span {
+  font-size: 0px !important;   
+  transform: rotate(-2.8deg) translateY(50px) !important;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+#uiBase.onMenu #spectButton {
+  width: 45px;
+  bottom: unset;
+  right: calc(50% - 555px);
+  left: unset;
+  z-index: 1;
+  bottom: 55px;
+  top: unset;
+  border: unset !important;
+}
+
+#menuFPS, #menuPingDisplay .material-icons {
+  color: var(--accent1) !important;
+}
+
+#menuPingDisplay .material-icons {
+  display: none;
+}
+
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+  color: transparent !important;
+}
+
+#spectButton .switchsml {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.sliderSml::before {
+  content: "visibility_off";
+  font-size: 40px;
+  color: var(--accent);
+  width: max-content;
+  height: auto;
+  background-color: transparent;
+  text-align: center;
+  transition-duration: 0.25s;
+  font-family: 'Material Icons';
+}
+
+input:checked+.sliderSml::before {
+  content: "visibility";
+  transform: unset;
+}
+
+input:checked+.sliderSml {
+  background-color: transparent !important;
+}
+
+.sliderSml {
+  opacity: 1;
+  background-color: transparent;
+}
+
+#accManagerBtn {
+  bottom: 0px !important;
+  position: fixed;
+  visibility: visible !important;
+  display: block !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  left: 0px;
+  transform: translate(1140px, 220px) rotate(2.2deg);
+  font-size: 0px !important;
+  text-shadow: unset !important;
+  pointer-events: none !important;
+  cursor: unset !important;
+  border: unset !important;
+}
+
+#accManagerBtn:before {
+  content: "groups";
+  font-family: "Material Icons";
+  font-size: 50px !important;
+  color: var(--accent);
+  pointer-events: all !important;
+  cursor: pointer !important;
+}
+
+#uiBase.onSpect .topRightCounters {
+  display: none;
+}
+
+#hudClassImg {
+  width:100%;
+  height:100%;
+  image-rendering:pixelated;
+  image-rendering:-moz-crisp-edges;
+  image-rendering:crisp-edges;
+  border-radius:10px;
+}
+
+#hudClassIcon {
+  display:none;
+}
+
+#bottomLeftHolder {
+  z-index:10;
+  position:absolute;
+  bottom:30px;
+  left:20px;
+  text-align:left;
+}
+
+#healthValueHolder::before {
+  content:"";
+  width:994px;
+  height:120px;
+  position:fixed;
+  z-index:-1;
+  left:-2px;
+  top:-65px;
+  background: linear-gradient(90deg, var(--background) 0%, var(--background-end) 70%, var(--background-end) 100%);
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134030686711848/mask-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/867879422346657812/mask-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+#healthValueHolder {
+  border-radius:5px;
+  /* padding:3px; */
+  margin-bottom:40px;
+  padding-right:7px;
+  padding-left:9px;
+  position:fixed;
+  left:132px;
+  transform:rotate(-2.8deg);
+  z-index:10;
+  background-color:transparent;
+  bottom:30px;
+  z-index:-1!important;
+}
+
+#healthValue {
+  position:fixed;
+  color:var(--text)!important;
+  font-size:35px!important;
+  line-height:0px;
+  z-index:10;
+  text-align:center;
+  background-color: transparent;
+  width:105px;
+  height:1px;
+  padding-left: 5px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  transform: translateY(-10px);
+}
+
+#maxHP {
+  display:none;
+}
+
+#challIcon {
+  display:none;
+}
+
+#healthBar {
+  height:44px;
+  margin-left:195px;
+  width:480px;
+  display:flex;
+  direction:ltr;
+  justify-content:space-evenly;
+  align-items:center;
+  overflow:hidden;
+  background-color:var(--background);
+  margin-bottom:-12px;
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134026626613288/health-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134026626613288/health-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  border: unset !important;
+  outline: 0px;
+  transform: rotate(-2.8deg)
+}
+
+.healthBarSeg {
+  display:inline-block;
+  border-radius:0;
+  margin-right:-2px;
+  background-color:transparent;
+  width:-moz-available;
+  width:-webkit-fill-available;
+  width:fill-available;
+
+}
+
+.hpBSeg {
+  height:100%;
+  border-radius:0;
+  box-shadow:none!important;
+  -webkit-box-shadow:none!important;
+  -moz-box-shadow:none!important;
+  background-color: var(--health) !important;
+}
+
+
+#weapDisplay {
+  display:none!important;
+}
+
+.weaponChatIcon {
+  filter:brightness(0) invert(1);
+  height:20px;
+  width:40px;
+}
+
+.headShotChatIcon {
+  height:20px;
+  filter:brightness(0) invert(1);
+  width:20px;
+}
+
+.chatMsg {
+}
+
+#chatHolder {
+  right:140px;
+  left:unset!important;
+  background-color:transparent!important;
+  bottom: 45px !important;
+}
+
+#uiBase.onMenu #chatHolder {
+  right: calc(50% - 610px);
+  bottom: 120px !important;
+  transform: rotate(-.6deg);
+}
+
+#uiBase.onMenu #chatInput::placeholder {
+  color: var(--text) !important;
+}
+
+#chatInputHolder::before {
+  content:"";
+  width:605px;
+  height:77px;
+  background-image:url(https://media.discordapp.net/attachments/610498484529004575/1058054036051460156/Untitled-2_copy.png);
+  position:fixed;
+  z-index:-1;
+  background-size:605px 70px;
+  background-repeat:no-repeat;
+  transform:rotate(-2.8deg) rotateY(180deg);
+  right:-11px;
+  top:-18px;
+}
+
+#uiBase.onGame #chatInputHolder {
+  visibility: hidden;
+}
+
+#uiBase.onMenu #chatInputHolder::after {
+  content:"";
+  width:605px;
+  height:77px;
+  background-image:url(https://media.discordapp.net/attachments/610498484529004575/1058054036051460156/Untitled-2_copy.png);
+  position:fixed;
+  z-index:-1;
+  background-size:605px 70px;
+  background-repeat:no-repeat;
+  transform:rotate(-1.2deg);
+  right: 620px;
+  top:5px;
+}
+
+#chatInputHolder {
+  background-color:transparent;
+  border:none;
+  border-radius:0;
+  height:25px;
+  padding:unset;
+  padding-left:25px;
+  border: unset !important;
+  outline: unset !important;
+  transform:translateX(-5px) rotate(2.8deg);
+}
+
+#uiBase.onEndScrn #chatHolder {
+  display: none !important;
+}
+
+#chatSwitch {
+  display: none;
+}
+
+#uiBase.onGame #chatSwitch {
+  display :inline-block;
+  visibility: visible;
+  width:994px;
+  height:120px;
+  position:fixed;
+  z-index:-1 !important;
+  right:-2px;
+  top:-79px;
+  background: linear-gradient(90deg, var(--background) 0%, var(--background-end) 70%, var(--background-end) 100%);
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134030686711848/mask-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/867879422346657812/mask-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  visibility: visible !important;
+  transform: scaleX(-1);
+}
+
+
+#uiBase.onGame #chatInput {
+  height:44px;
+  width:480px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868496354157166633/health-bg.png);
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134026626613288/health-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: var(--chat) !important;
+  visibility: visible;
+  right: 5px;
+  position: fixed;
+  text-align: right;
+  padding-right: 150px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  bottom: -15px;
+  line-height: 48px !important;
+  padding-top: unset;
+  padding-bottom: 20px;
+  border: unset !important;
+  color: var(--text);
+}
+
+
+#uiBase.onMenu #chatInput {
+  visibility: visible !important;
+  background-color:transparent!important;
+  border:none;
+  text-align:right;
+  height:20px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  padding:0;
+  /* padding-top:5px; */
+  line-height:1;
+  font-size:16px;
+}
+
+#uiBase.onGame #chatInput::placeholder {
+  color: transparent !important;
+}
+
+#uiBase.onGame .chatItem {
+  background-color:transparent!important;
+  background:transparent;
+  background: linear-gradient(90deg, transparent, var(--chat));
+  padding:10px;
+  margin:2px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:1;
+}
+
+
+#uiBase.onGame .chatItem {
+  transform: rotate(0deg) translate(-5px, -5px);
+  padding-right: 10px;
+  width: 300px;
+}
+
+.chatItem {
+  color: var(--accent);
+}
+
+#chatList {
+  text-align:right;
+  border-radius:0;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:1;
+  background-color:transparent;
+  margin-bottom:20px;
+  -webkit-mask-image:linear-gradient(to bottom,rgba(24,24,24,0) 0%,rgba(24,24,24,1) 36%,rgba(24,24,24,1) 100%);
+}
+
+#uiBase.onGame #chatList > div:last-child > div {
+   clip-path: polygon(0 0, 0 100%, 87% 100%, 89% 87%, 91% 87%, 100% 0);
+  padding-right: 40px;
+
+}
+
+#uiBase.onGame #chatList {
+  margin-bottom: 35px;
+  transform: translateX(-65px) rotate(2.8deg);
+  width: 320px;
+
+}
+
+.chatMsg[style="color:#fc03ec"] {
+  color: #2fff88 !important;
+}
+
+
+#voiceDisplay {
+  display:none;
+}
+#bottomRight {
+  z-index: 11;
+}
+
+#ammoDisplay {
+  position:fixed;
+  left:255px;
+  bottom:40px;
+  width:425px;
+  height:16px;
+  padding:0!important;
+  border-radius:0px;
+  text-align:left;
+  background-color:rgba(25, 25, 25, .4);
+  background-image:linear-gradient(90deg,var(--ammo) 0%,var(--ammo) 100%);
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134029151580171/ammo-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134029151580171/ammo-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  transform: rotate(-2.8deg);
+}
+
+#ammoDisplay[style*="background-size: 0%;"] {
+  background-size:100%!important;
+}
+
+#reloadMsg {
+  bottom:calc(50% - 150px);
+  background-image:none !important;
+  color:var(--background);
+  font-family:'Material Icons';
+  font-size:0;
+  background-color: transparent !important;
+  border: unset !important;
+}
+
+#reloadMsg::before {
+  content:"priority_high";
+  font-size:40px;
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+#ammoIcon {
+  display:none;
+}
+
+#ammoVal {
+  font-size:20px;
+  position:fixed;
+  transform:translateX(-100px) skewX(25deg);
+  bottom:45px;
+  background-color:transparent;
+  width:106px;
+  padding-left:10px;
+  color:var(--text)!important;
+  clip-path:polygon(0 0,100% 0,90% 100%,0 100%);
+  letter-spacing:2px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  right:215px;
+  z-index:10000!important;
+}
+
+#ammoMax {
+  visibility:hidden;
+}
+
+#ammoMax:before {
+  content:"";
+  position:fixed;
+  width:614px;
+  height:53px;
+  bottom:30px;
+  left:-3px;
+  background-image: url(https://media.discordapp.net/attachments/610498484529004575/1058054857342341230/Untitled-2_copy.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index:-1!important;
+  transform:skew(27deg) translateX(-170px) rotate(2.2deg);
+  visibility:visible;
+}
+
+#timerDisplay {
+  left:50%;
+  position:fixed;
+  transform:translateX(-50%) rotate(0deg)!important;
+  border-radius:0;
+  width:100px;
+  text-align:center;
+  height:25px;
+  line-height:25px;
+  background-color:transparent;
+  margin-top:30px;
+  padding: 0px;
+}
+
+#timerVal {
+  color:var(--background);
+  text-align:center;
+}
+
+#timerIcon {
+  display:none;
+}
+
+#topLeftHolder {
+  left:130px;
+  top:60px;
+}
+
+#topRight {
+  right:130px;
+  top:60px;
+}
+
+#topRight::before {
+  content:"groups";
+  font-family: "Material Icons";
+  position:fixed;
+  width:260px;
+  right:175px;
+  height:25px;
+  transform:rotate(-4deg);
+  top:75px;
+  z-index: 10;
+  line-height: 15px;
+  color: var(--text);
+  padding-right: 10px;
+  font-size: 40px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+#topRight::after {
+  content:" ";
+  width:994px;
+  height:120px;
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134030686711848/mask-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/867879422346657812/mask-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background: linear-gradient(90deg, var(--background) 0%, var(--background-end) 60%, var(--background-end) 100%);
+  position:fixed;
+  z-index:-1;
+  transform:rotateX(-180deg) rotate(182.8deg) scaleY(-1);
+  right:135px;
+  top:40px;
+}
+
+#curGameInfo {
+  display:none;
+}
+
+#gameMessage {
+  color:var(--background);
+  top:50px;
+  font-size: 16px;
+}
+
+#leaderDisplay {
+  padding:unset;
+  width:unset;
+  margin-top:42px;
+  margin-right:80px;
+  transform: rotate(-2.8deg);
+  height: 400px;
+  padding-top:10px;
+  background-color: transparent;
+}
+
+/*
+#leaderDisplay:before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  z-index: -1;
+  transform: rotate(-2.8deg);
+  -webkit-mask-image:linear-gradient(to top,rgba(24,24,24,0) 0%,rgba(24,24,24,1) 36%,rgba(24,24,24,1) 100%);
+}
+*/
+
+.leaderItem {
+  background: var(--chat);
+  padding:0;
+  padding-left:40px;
+  height:30px;
+  padding-right:30px;
+  line-height:30px;
+  margin-bottom:5px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  font-size:16px!important;
+  width:255px;
+  margin-right:15px;
+  color:var(--text)!important;
+  background: linear-gradient(90deg, transparent, var(--chat));
+}
+
+#leaderContainer > div:nth-child(1) {
+  clip-path: polygon(0% 0%, 0 100%, 100% 100%, 100% 80%, 92% 0);
+}
+
+#teamScores {
+  transform:rotate(2.8deg);
+  background: transparent;
+  border-radius:0;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:1;
+  margin-top:20px;
+  margin-left: 60px;
+}
+
+#voteToKick {
+  transform:rotate(2.5deg);
+  background:linear-gradient(-90deg,rgba(25,25,25,0) 0%,rgba(25,25,25,0.4) 100%);
+  border-radius:0;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:1;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.leaderName,.newLeaderName,.newLeaderNameF,.endTableN[style*="color:#eb5656"] {
+  color:var(--accent)!important;
+}
+
+.leaderNameM, .leaderNameF, .leaderScore, .leaderCounter {
+  color:var(--text)!important;
+}
+
+.kfItem {
+  background:var(--chat);
+  border-radius:0;
+  color:var(--accent);
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  margin-bottom:5px;
+  height:25px;
+  line-height:25px;
+  padding:0;
+  padding-left:10px;
+  opacity:.7;
+  padding-right:10px;
+  font-size:16px!important;
+  transform:translateY(50px) translateX(-120px) rotate(-2.8deg);
+}
+
+.kfMsg {
+  color:var(--accent)!important;
+  line-height:1;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  font-size:16px!important;
+}
+
+.kfMsg [style="color:#eb5656"] {
+  color:var(--accent)!important;
+}
+
+.kfMsg [style="color:#9eeb56"] {
+  color:var(--text)!important;
+}
+
+.topRightCounters {
+  position:fixed;
+  left:210px;
+  bottom:124px;
+  right:unset!important;
+  top:unset!important;
+  transform:rotate(-2.8deg);
+  display:flex;
+  width: 655px !important;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:1;
+  z-index:-2!important;
+  font-size:16px;
+  height:42px;
+  color:var(--text)!important;
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868559757991104532/counter-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  padding-left: 30px;
+  line-height: 29px;
+  background: linear-gradient(90deg, var(--background) 0%, var(--background-end) 55%, var(--background-end) 100%);
+}
+
+.countIcon {
+  border-radius:0;
+  background-color:transparent;
+  font-size:16px;
+  color:var(--text)!important;
+}
+
+#killStreakHolder {
+  position:fixed;
+  bottom:75px;
+  right:unset;
+  left:50%;
+  transform:translateX(-50%);
+  margin-right:0;
+  margin-bottom:0;
+}
+
+.killStreakItem {
+  width:70px;
+  height:70px;
+  border-radius:100%;
+  background-color:var(--background);
+}
+
+#killsVal,#deathsVal,#streakVal,#myScoreVal,#kdVal,#livesDisp {
+  color:var(--text)!important;
+  font-size: 20px;
+}
+
+#killsVal:after {
+  content:' K';
+  display:inline;
+  font-size: 20px;
+  color:var(--text)!important;
+  text-align:center;
+}
+
+#deathsVal:after {
+  content:' D';
+  display:inline;
+  font-size: 20px;
+  text-align:center;
+  color:var(--text)!important;
+}
+
+#streakVal:after {
+  content:' S';
+  display:inline;
+  font-size: 20px;
+  text-align:center;
+  color:var(--text)!important;
+}
+
+#myScoreVal:after {
+  content:' P';
+  display:inline;
+  font-size: 20px;
+  text-align:center;
+}
+
+#kdVal:after {
+  content:' K/D';
+  display:inline;
+  font-size: 20px;
+  color:var(--text)!important;
+  text-align:center;
+}
+
+#livesDisp:after {
+  content:' L';
+  display:inline;
+  font-size: 20px;
+  color:var(--text)!important;
+  text-align:center;
+}
+
+#killsIcon,#deathsIcon,#streakIcon,#kdIcon {
+  display:none;
+}
+
+.countIcon .material-icons {
+  display:none;
+}
+
+#roundsDisplay {
+  display:none!important;
+}
+
+.debugInfo {
+  display:flex!important;
+  width:650px;
+  transform:rotate(2.4deg) translateY(54px);
+  height:40px;
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  line-height:45px;
+  padding:unset;
+  padding-left:40px;
+  margin-left:90px;
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/869994712747094076/counter-bg_1.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background: linear-gradient(90deg, var(--background) 0%, var(--background-end) 55%, var(--background-end) 100%);
+}
+
+#topLeftHolder::after {
+  content:"";
+  width:994px;
+  height:120px;
+  -webkit-mask-image: url(https://media.discordapp.net/attachments/610498484529004575/868134030686711848/mask-bg.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url(https://media.discordapp.net/attachments/610498484529004575/867879422346657812/mask-bg.png);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background: linear-gradient(90deg, var(--background) 0%, var(--background-end) 60%, var(--background-end) 100%);
+  position:fixed;
+  z-index:-1;
+  background-repeat:no-repeat;
+  transform:rotate(2.8deg) scaleY(-1);
+  top: 40px;
+  left: 130px;
+}
+
+#topLeftHolder::before {
+  content:"insert_chart";
+  font-family: "Material Icons";
+  font-size: 40px;
+  line-height: 20px;
+  left: 180px;
+  top: 70px;
+  position: fixed;
+  color: var(--text);
+  transform: scaleX(-1) rotate(-2.8deg);
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+#fpsDisplay {
+  color:var(--text)!important;
+  margin-right:10px;
+  font-size:16px;
+}
+
+#pingIcon {
+  display:none;
+}
+
+#pingDisplay {
+  color:var(--text)!important;
+  font-size:16px;
+}
+
+#pingText {
+  color:var(--text)!important;
+  font-size:16px;
+}
+
+#pingDisplay:after {
+  content:" PING";
+}
+
+#ingameFPS {
+  color:var(--text)!important;
+}
+
+#speedRunHolder {
+  right: unset;
+  left: 130px;
+  top: 120px;
+  bottom: unset;
+  border-radius: 0px;
+  background-color: transparent !important;
+  color: var(--text);   
+  padding: 0px !important;
+}
+
+#speedRunReset {
+  display: block !important; 
+  margin-right: unset;
+  border-radius: 0px;
+  transform: rotate(2.8deg);    
+  background:linear-gradient(-90deg,rgba(25,25,25,0) 0%,rgba(25,25,25,0.4) 100%);
+  color: var(--text);   
+}
+
+#speedRunBox {
+  background-color: transparent !important; 
+  color: var(--text);   
+  padding: 0px !important;
+}
+
+#speedRunInfo {
+  transform: rotate(2.8deg);
+  color: var(--text);
+  background:linear-gradient(-90deg,rgba(25,25,25,0) 0%,rgba(25,25,25,0.4) 100%);
+  padding-left: 10px;
+  border: none !important;
+  line-height: 45px;
+  padding-bottom: 0px;
+  font-size: 20px;
+}
+
+#speedRunInfo > span {
+  padding-right: 20px;
+  line-height: 45px;
+  font-size: 20px;
+  color: var(--text) !important;
+}
+
+#spdrnZC {
+  color: var(--text) !important;
+}
+
+#speedRunInfo > span > i {
+  font-size: 24px;
+  line-height: 45px;
+  color: var(--accent) !important;
+}
+
+.speedRunItem {
+  transform: rotate(2.8deg); 
+  color: var(--text);   
+  border: none !important;
+  font-size: 16px;
+  opacity: .7;
+  padding-right: 20px;
+}
+
+#speedRunRstKey {
+  color: var(--accent);
+}
+
+.sriAct {
+  background:linear-gradient(-90deg,rgba(25,25,25,0) 0%,rgba(25,25,25,0.4) 100%);
+  color: var(--accent) !important;
+}
+
+#speedRunTimer {
+  color: var(--background);
+  font-size: 24px;
+  text-align: center;
+  transform: translateX(-50%);    
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  padding: 0px;
+  display: none;
+}
+
+#clientExit {
+  display: flex !important; 
+}
+
+.speedRunITim {
+  color: var(--text) !important;
+}
+
+#specKPDContr {
+  background-color: var(--background) !important;
+  border-radius: 0px;
+  background:
+    linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+    linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+    linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+    linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+    linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+    linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+    linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+    linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+#specKPDContr > div {
+  color: var(--accent) !important;
+}
+
+#specKPDContr > div > span {
+  color: var(--accent) !important;
+}
+
+#specKPDContr > div > div > span {
+  color: var(--accent) !important;
+}
+
+.gfSection, .endSection, .crStat, #kdLayout {
+  background-color: var(--background);
+  border-radius: 0px;
+  border-color: transparent
+}
+
+#fundsLayout > div > span {
+  color: var(--accent) !important;
+}
+
+.crLabel {
+  color: var(--accent)
+}
+
+.crVal {
+  color: var(--accent)
+}
+
+.endTitle {
+  color: var(--accent);
+}
+
+.xpLvl {
+  color: var(--accent)
+}
+
+#menuClassContainer:hover #menuClassNameTag {
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+#menuClassNameTag {
+  visibility: visible;
+  margin-top: unset;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background-color: var(--background);
+  padding: 10px;
+  border-left: 5px solid var(--accent);
+  border-right: 5px solid var(--accent);
+  padding-left: 20px;
+  padding-right: 20px;
+  bottom: 320px;
+  overflow: hidden;
+  height: 30px;
+  transition: all .2s ease-in-out;
+}
+
+.menuClassLevelBox {
+  background-color: transparent;
+}
+
+#uiBase.onMenu .verticalSeparatorInline {
+    display: none;
+}
+
+#tlInfHold {
+    position: fixed;
+    left: calc(50% - 600px);
+    top: 120px;
+}
+
+.freeKRIcon {
+    height: 47px;
+}
+
+#killCard {
+	position: fixed;
+	display: flex !important;
+    backdrop-filter: blur(20px);
+    width: 1340px;
+	left: calc(50%);
+	transform: translateX(-50%);
+	height: 220px;
+	flex-direction: row;
+	flex-grow: 1;
+	bottom: 20px;
+	justify-content: space-around;
+	background:
+	linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	z-index: 1 !important;
+	border-radius: unset;
+	border: unset !important;
+	box-shadow: unset;
+}
+
+#kCProfile {
+  display: flex !important;
+  order: 0;
+  height: 60%;
+  width: auto !important;
+  border-right: 5px solid var(--accent);
+  background-color: var(--background);
+  margin-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#killCard > div.kClvl {
+  order: 2;
+  background-color: var(--background);
+  width: calc(100% - 40px);
+  height: 40px;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  bottom: 10px;
+  left: 10px;
+  text-shadow: unset !important;
+  color: var(--accent);
+  line-height: 40px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#killCard > div.kClvl:before {
+	content: "National Aeronautics and Space Administration";
+	position: absolute;
+	left: 50%;
+	padding-left: 20px;
+	line-height: 40px;
+	transform: translateX(-50%)
+}
+
+#kCInfoS {
+  display: flex;
+  position: unset;
+  font-size: 70px;
+  width: 300px;
+  height: 78%;
+  color: var(--accent) !important;
+  bottom: unset;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-end;
+  order: 5;
+  border-left: 5px solid var(--accent);
+  box-sizing: border-box;
+  background-color: var(--background);
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-left: 20px;
+}
+
+#kCInfo {
+  position: unset !important;
+  display: flex !important;
+  font-size: 0px;
+  height: 78%;
+  background-color: var(--background);
+  width: 100%;
+  order: 4;
+  align-self: flex-start;
+  margin: unset;
+  z-index: 2 !important;
+  border-right: 5px solid var(--accent);
+  border-left: 5px solid var(--accent);
+  background-image: url(../img/custom/kill.png);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
+}
+
+
+#killCardMsg {
+  position: fixed;
+  bottom: 280px;
+  width: 1340px;
+  background: linear-gradient(90deg, var(--background), transparent, var(--background));
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+#kCStat {
+  bottom: 5px;
+  left: 20px;
+  color: var(--accent) !important;
+}
+
+#kCStat > span {
+  color: var(--accent) !important
+}
+
+#killCard > div:nth-child(3) {
+  display: none
+}
+
+#kCName {
+  position: absolute;
+  right: calc(50% - 660px);
+  bottom: 278px;
+    width: 500px;
+    text-align: right;
+  color: var(--accent)
+}
+
+#killCardBy {
+  color: var(--accent);
+  margin-left: 10px;
+    text-transform: uppercase;
+}
+
+#killCardKick {
+  color: var(--accent);
+}
+
+#killCardKick > span{
+  color: var(--accent) !important;
+}
+
+#leaderContainer > div > i {
+  margin-top: 0px !important;
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_0.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_2.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_1.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_1.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_2.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_4.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_3.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_7.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_4.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_6.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_5.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_5.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_6.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_8.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_7.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_9.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_8.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_10.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_9.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_0.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_10.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_11.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_11.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_14.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_12.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_15.png)
+}
+
+#kCProfile[src*="https://assets.krunker.io/textures/classes/icon_13.png"] {
+  content: url(https://storage.googleapis.com/assets.krunker.io/textures/weapons/icon_19.png)
+}
+
+#killCard > br {
+  display: none;
+}
+
+#uiBase.onDeathScrn #chatHolder {
+  display: none !important;
+}
+
+#endTabbedView {
+  min-width: 1000px;
+  display: inline-block;
+  vertical-align: top
+}
+
+#endMidHolder {
+  top: 320px !important;
+}
+
+.endCard {
+  border-radius: 0px;
+  display: flex;
+  background-color: var(--background) !important;
+  background:
+	linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  box-shadow: unset !important;
+}
+
+#tabHolder {
+  display: flex;
+  width: 220px;
+  height: auto;
+  background-color: var(--background);
+  margin-right: 10px;
+  flex-direction: column;
+  margin-bottom: unset;
+}
+
+.tabHeader {
+  border-left: 5px solid var(--accent);
+  margin: 5px;
+  color: var(--accent) !important;
+  border-bottom: unset !important;
+  background-color: var(--background);
+  height: 40px;
+  line-height: 40px;
+}
+
+.tabHeader.selected {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+#endTable > tbody > tr > th {
+  border: unset !important;
+  color: var(--accent)
+}
+
+#endTable {
+  background-color: var(--background) !important;
+  border-radius: 0px;
+}
+
+.tabBody {
+  width: 100%;
+}
+
+#endTable > tbody > tr > td {
+  color: var(--accent) !important;
+}
+
+.endTableN {
+  color: var(--accent) !important;
+}
+
+#endTimer {
+  visibility: hidden !important;
+}
+
+#endInfo[style*="display: block;"] #endTimer {
+  background-color: var(--background) !important;
+  width: 1000px;
+  height: 80px;
+  margin-top: 130px;
+  background:
+  linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+  linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+  linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+  linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+  linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+  linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+  linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+  linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  line-height: 80px;
+  font-size: 40px;
+  font-style: unset;
+  color: var(--accent);
+  text-shadow: unset !important;
+  visibility: visible !important;
+}
+
+.tabHeader.selected {
+  border-bottom: unset;
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+
+#endTable > tbody > tr > td > span {
+  color: var(--accent) !important;
+}
+
+#matchVoteHolder[style*="display: inline-block"] {
+  width: 1000px;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-evenly;
+  left: 50%;
+  background-color: var(--background) !important;
+  background:
+  linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+  linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+  linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+  linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+  linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+  linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+  linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+  linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  align-items: center;
+  padding-top: 5px;
+  border-radius: 0px;
+  padding-bottom: 5px;
+}
+
+.matchVote {
+  margin: unset;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-shadow: unset;
+  border: unset !important;
+  border-radius: unset;
+  transition: .15s ease-in-out;
+  transform: scale(.9) !important;
+}
+
+.matchVote:hover {
+  transform: scale(1.2) !important;
+}
+
+.matchVote:before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background:
+	linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 10;
+  background-color: var(--background);
+}
+
+.matchVote > div {
+  display: flex;
+  position: unset;
+  text-shadow: unset !important;
+  text-align: center;
+  color: var(--accent) !important;
+  z-index: 11;
+}
+
+#tabHolder:after {
+  content: "NASA LTD â“’";
+  color: var(--accent);
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+
+#victorySub {
+  display: none;
+}
+
+#uiBase.onMenu #aMerger {
+  position: fixed;
+  left: calc(50%);
+  top: 120px;
+  transform: translateX(-50%);
+}
+
+#uiBase.onEndScrn #endAHolderR {
+  position: fixed !important;
+  right: calc(50% - 1000px);
+}
+
+#uiBase.onEndScrn #endAHolderL {
+  position: fixed !important;
+  left: calc(50% - 1000px);
+}
+
+.kfItem {
+  border: unset !important;
+  border-right: 5px solid var(--accent) !important;
+  padding-right: 10px;
+  padding-left: 80px;
+  border-radius: 0px !important;
+  background: linear-gradient(90deg, transparent 0%, transparent 10%, var(--background) 100%);
+}
+
+#teamTotal0 {
+  position: fixed;
+  left: calc(50% - 470px);
+  top: 145px;
+  background-color: var(--background);
+}
+
+#teamTotal1 {
+  position: fixed;
+  right: calc(50% - 470px);
+  top: 145px;
+  background-color: var(--background);
+}
+
+.teamTotalScore {
+	color: var(--accent);
+}
+
+#specKPDContr {
+  background-color: var(--background) !important;
+  border-radius: 0px;
+  background:
+	linear-gradient(to right, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 0 100%,
+	linear-gradient(to top, var(--accent)  3px, transparent 4px) 100% 100%,
+	linear-gradient(to right, var(--accent) 3px, transparent 4px) 0 0,
+	linear-gradient(to left, var(--accent)  3px, transparent 4px) 100% 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 0 0,
+	linear-gradient(to bottom, var(--accent)  3px, transparent 4px) 100% 0;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+#specKPDContr > div {
+  color: var(--accent) !important;
+}
+
+#specKPDContr > div > span {
+  color: var(--accent) !important;
+}
+
+#specKPDContr > div > div > span {
+  color: var(--accent) !important;
+}
+
+.gfSection, .endSection, .crStat, #kdLayout {
+  background-color: var(--background);
+  border-radius: 0px;
+  border-color: transparent
+}
+
+#fundsLayout > div > span {
+  color: var(--accent) !important;
+}
+
+.crLabel {
+  color: var(--accent)
+}
+
+.crVal {
+  color: var(--accent)
+}
+
+.endTitle {
+  color: var(--accent);
+}
+
+.xpLvl {
+  color: var(--accent)
+}
+
+#menuClassContainer:hover #menuClassNameTag {
+  visibility: visible;
+  transform: translateX(-50%) scale(1);
+}
+
+
+.menuClassLevelBox {
+  background-color: transparent;
+}
+
+#uiBase.onMenu #termsInfo {
+	position: fixed;
+	right: unset;
+	left: calc(50% - 615px);
+	bottom: 112px;
+    height: 25px;
+	background-color: transparent !important;
+	border-radius: 0px;
+	width: 380px;
+    transform: rotate(-1.6deg) !important;
+	box-shadow: unset !important;
+}
+
+#uiBase.onMenu .verticalSeparatorInline {
+	display: none;
+}
+
+#uiBase.onMenu .terms {
+	font-size: 20px !important;
+	padding: unset !important;
+	color: var(--accent);
+}
+
+#uiBase.onMenu .terms.standout {
+  color: var(--accent) !important;
+}
+
+.freeKRIcon {
+	height: 47px;
+}
+
+#rankedSoonTm {
+	display: none;
+}
+
+#killCardKick {
+    display: none;
+}
+
+.youNewDiv {
+	background-color: var(--background);
+	margin-top: unset;
+	margin-bottom: 10px;
+}
+
+#streamContainer {
+	position: fixed;
+	left: 30px;
+	top: 30px;
+	background-color: var(--background) !important;
+	box-shadow: unset !important;
+}
+
+#aContainer {
+	background-color: var(--background) !important;
+}
+
+.leftUIB {
+	border: unset !important;
+	background-color: unset !important;
+	box-shadow: unset !important;
+}
+
+#modList > div > div.mapListItem > div {
+	font-size: 20px !important;
+}
+
+#modList > div > div.mapListItem > div > span {
+	font-size: 20px !important;
+}
